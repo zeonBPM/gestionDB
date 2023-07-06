@@ -9,6 +9,10 @@ from "Peliculas"
  
  order by fecha
 
+
+
+
+
 //mostrar lista de clientes
 
 select 
@@ -28,9 +32,34 @@ select
 from "Salas"
 order by formato
 
-//mostrar lista de tickets bien formateada
 
 
+
+//mostrar lista de tickets
+
+
+
+select 
+
+tickets_id,
+sala,
+pelicula,
+fecha,
+cantidad,
+precio,
+
+(cantidad*precio) as total
+
+from "Tickets"
+
+order by sala
+
+
+
+
+
+
+ 
 
 
 
